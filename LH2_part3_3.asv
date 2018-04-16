@@ -1,0 +1,18 @@
+global en totC counter count totCo;
+totC = 0; totCo =0;counter =0;k =[2 3 4 5 6 7 8 9 10]; 
+%PLEASE ALLOW CODE TO RUN FOR APPROX. 145 SECONDS.
+%IF OUTPUT SHOWS, 'DEGENERACY', PLEASE RUN ONCE AGAIN.
+for en=2:10 
+    totCo = 0;
+    for i=1:208
+     LH2_part1();
+     len = length(LH2_part3__2());
+     totCo= totCo+count;
+     totC(en-1)= totCo/208;
+    end  
+    
+end 
+%totC
+scatter(k, totC);
+xlabel('Size of "n" matrix');
+ylabel('Number of pivots to find a solution/1000 iterations');
